@@ -1,9 +1,9 @@
 # ==== CONFIGURE =====
 # Use a Node 16 base image
 FROM node:16-alpine
-# Set the working directory to /app inside the container
+# Set the working directory to /frontend inside the container
 WORKDIR /frontend
-# Copy app files
+# Copy frontend files
 COPY . .
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
